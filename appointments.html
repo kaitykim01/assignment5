@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <!-- javascript-->
+        <script src='main.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <header>
+        <h1>CMU Health Connect</h1>
+        <!-- Image of Progress bar... I don't really know how to code the images-->
+        <img src='progress2.png' alt='progress bar' width=300px>
+        <h2>Select a Date</h2>
+    </header>
+
+    <!-- Appointment Buttons-->
+    <div id="appt-times">
+        <!-- Select Monday to view the popup date-->
+        <button class='button' onclick='showPopup()'> Monday <br />Jan 31st <br /><sub>3 appts</sub></button> 
+        <button class='button'> Tuesday <br />Feb 1st <br /><sub>5 appts</sub></button>
+        <button class='button'> Wednesday <br />Feb 2nd <br /><sub>3 appts</sub></button>
+        <button class='button'> Thursday <br />Feb 3rd <br /><sub>3 appts</sub></button>
+        <button class='button'> Friday <br />Feb 4th <br /><sub>7 appts</sub></button>
+        <button class='button'> Saturday <br />Feb 5th <br /><sub>5 appts</sub></button>
+        <button class='button'> Sunday <br />Feb 6th <br /><sub>8 appts</sub></button>
+        <button class='button'> Monday <br />Feb 7th <br /><sub>3 appts</sub></button>
+    </div>
+
+    <!-- Pop up Screen to Book Appointment -->
+    <div id='popup-screen'> 
+        <div id='popup'>
+            <div class='row-popup'>
+                <div class='col-popup'>
+                    <h3>Showing appointments for:  </h3>
+                    <h2 class='bold'> Monday Jan 31st </h2> 
+                    <h3 class='bold center-text'>January 2022</h3>
+                    <img src='calendar.png' alt='calendar'class='center-img'>
+                </div>
+                <div class='col-popup'>
+                    <h3 class='center-text top' > Select a time </h3>
+                    <!-- Available Time Buttons -->
+                    <div id='appt-hours'>
+                        <button class='button button-hrs'> 10:00am </button>
+                        <button class='button button-hrs'> 10:40am </button>
+                        <button class='button button-hrs'> 11:00am </button>
+                    </div>
+
+                    <!-- Book appointment Button -->
+                    <div>
+                        <a href="confirm.html"><button class='button button-book'>Book Appointment</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+        
+
+
+    
+
+   
+    
+
+</body>
+
+</html>
